@@ -7,16 +7,11 @@ box-sizing: border-box;
 -ms-user-select: none; /* IE 10 and IE 11 */
 user-select: none; /* Standard syntax */
 font-family: 'Montserrat', sans-serif;
-color: #fff;
 }
-
 :root{
-  --bg: #222
+    --box:#ff9900a7;
 }
-
-html,
-body {
-  max-width: 100vw;
-  overflow-x: hidden;
-  background: var(--bg);
+body{
+    height: 100vh;
+    overflow: hidden;
 }

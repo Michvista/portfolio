@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+-webkit-user-select: none; /* Safari */
+-ms-user-select: none; /* IE 10 and IE 11 */
+user-select: none; /* Standard syntax */
+font-family: 'Montserrat', sans-serif;
+}
+:root{
+    --box:#ff9900a7;
+}
+body{
+    height: 100vh;
+    overflow: hidden;
+}
+.hero{
+    display: flex;
+}
+.hero .textNdIcons{
+    display: flex;
+    flex-direction: column;
+}
+.hero .textNdIcons .icons{
+    width: 55rem;
+}
+.hero .textNdIcons .icons img{
+    margin-right: 3rem;
+}
+.hero .textNdIcons .icons #two{
+    position: relative;
+    left: 3rem;
+    top: -2rem;
+}
+.hero .textNdIcons .icons #three{
+    position: relative;
+    left: 40%;
+}
+.hero .textNdIcons h1{
+    width: 500px;
+    font-size: 55px;
+   align-self: flex-end;
+   position: absolute;
+   bottom: 0;
+   left: 0;
+   margin: 2rem;
+   margin-left:7rem ;
+}
+.Image{
+    display: flex;
+}
+.Image img{
+    width: 800px;
+}
+.Image .svg{
+    position: absolute;
+    width: 30%;
+    align-self: center;
+    justify-content: center;
+    z-index: 1000;
+    bottom: 7rem;
+    right: 2rem;
+}
+.mobile{
+    display: none;
+}
+@media screen and (max-width: 1280px) {
+    .hero .textNdIcons .icons{
+        width: 40rem;
+        position: relative;
+        top: 2rem;
+        left: 4rem;
+        z-index: 30;
+    }
+    .hero .textNdIcons .icons #two{
+        left: 3rem;
+        top: 0;
+    }
+    .hero .textNdIcons .icons #three{
+        left: 30%;
+        width: 20%;
+    }
+    .hero .textNdIcons .icons img{
+        width: 30%;
+    } 
+    .Image .backdrop{
+        position: absolute;
+        transform: rotate(-90deg);
+        top: -30rem;
+        left:0;
+    }
+    .Image .svg{
+        /* display: none; */
+        bottom: 12rem;
+    }
+}
+@media screen and (max-width: 960px) {
+    /* body{
+        overflow: scroll;
+    } */
+    .hero .textNdIcons h1{
+        z-index: 500;
+    }
+    .hero .textNdIcons .icons{
+        width: 10rem;
+        display: flex;
+        flex-direction: column;
+    }
+    .hero .textNdIcons .icons img{
+        width: 120%;
+        margin-bottom: 3rem;
+    }
+    .icons .one{
+         order: 2 !important; 
+     }
+    .hero .textNdIcons .icons #three,
+    .hero .textNdIcons .icons #two{
+        position: relative;
+        left: 150%;
+    }
+    .hero .textNdIcons .icons #three{
+        order: 3;
+        width: 100%;
+    }
+}
+@media screen and (max-width: 600px) {
+    .hero .textNdIcons .icons{
+        /* display: none;  */
+    }
+    .hero .textNdIcons .icons img{
+        width: 40%;
+    }
+    .hero .textNdIcons .icons #three{
+        width: 40%;
+    }
+    .Image .backdrop{
+        display: none;
+    }
+    .hero .textNdIcons h1{
+        bottom: 5rem;
+        left: 0;
+        margin: 2rem;
+        margin-left:3rem ;
+        font-size: 45px;
+        width: 400px;
+    }
+    .Image .svg{
+        bottom: 17rem;
+    }
+    .Image img{
+        width:500px;
+    }
+    .mobile{
+        width:500px;
+        display: block;
+        position: relative;
+        bottom: -3rem;
+        left: -12rem;
+    }
+    .hero .textNdIcons .icons #three,
+    .hero .textNdIcons .icons #two{
+        left: 75%;
+    }
+}
